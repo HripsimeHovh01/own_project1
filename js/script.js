@@ -51,6 +51,15 @@ function checkObjPrivateStatus(state) {
     state ? console.log("Sorry but obj is not visible"): console.log(obj);
     
 }
+
+function userReligion() {
+    for (let i = 0; i < 2; i++) {
+    obj.religion.push(prompt(`What religion do you belong to? ${i + 1}`))
+        
+    }
+}
 rememberAndCreateUserCountry();
+userReligion()
 detectUserPersonalLevel();
 checkObjPrivateStatus(obj.private);
+
